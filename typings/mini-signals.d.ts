@@ -7,7 +7,7 @@ declare module "mini-signals" {
 
 	class MiniSignal {
 		constructor();
-		handlers(exists?: boolean): MiniSignal.MiniSignalBinding[] | boolean;
+		handlers(exists?: boolean): MiniSignal.MiniSignalBinding[];
 		has(node: MiniSignal.MiniSignalBinding): boolean;
 		dispatch(...args: any[]): boolean;
 		add(fn: Function, thisArg?: any): MiniSignal.MiniSignalBinding;
